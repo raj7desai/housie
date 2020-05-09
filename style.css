@@ -1,0 +1,33 @@
+table {
+   width: 1000px;
+   display: table;
+   table-layout: fixed;
+   border-collapse: collapse;
+}
+
+td {
+  width: 10%;
+  display: table-cell;
+  text-align: left;
+  border: 1px solid black;
+}
+
+row { 
+  width: 500px;
+}
+
+
+/* table {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+} */
+
+/* td {
+  display: table-cell;
+  text-align: center;
+  border: 1px solid hotpink;
+  vertical-align: middle;
+  word-wrap: break-word;
+} */
