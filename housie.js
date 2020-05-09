@@ -103,8 +103,8 @@ let addToRow3 = () => {
   console.log("on line 133 " + count)
 
   while (count > 4) {
-    let n = random(1, 8)
-    let m = random(1, 9)
+    let n = random(0, 8)
+    let m = random(0, 9)
 
     celebNumber = n * 10 + m
     console.log(n + " " + m + " " + celebNumber)
@@ -130,8 +130,8 @@ let addToRow2 = () => {
   console.log("on line 133 " + count)
 
   while (count > 4) {
-    let n = random(1, 8)
-    let m = random(1, 9)
+    let n = random(0, 8)
+    let m = random(0, 9)
 
     celebNumber = n * 10 + m
     console.log(n + " " + m + " " + celebNumber)
@@ -157,8 +157,8 @@ let addToRow1 = () => {
   console.log("on line 133 " + count)
 
   while (count > 4) {
-    let n = random(1, 8)
-    let m = random(1, 9)
+    let n = random(0, 8)
+    let m = random(0, 9)
 
     celebNumber = n * 10 + m
     console.log(n + " " + m + " " + celebNumber)
