@@ -44,7 +44,12 @@ var Canvas2Image = function () {
 	}
 
 	function saveFile (strData) {
-		document.location.href = strData;
+    var link = document.createElement("a");
+    link.download = 'ticket.png';
+    link.href = strData;
+    link.click()
+
+    
 	}
 
 	function genImage(strData) {
