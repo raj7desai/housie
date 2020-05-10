@@ -4,12 +4,33 @@
   <title>HOusie Ticket Maker</title>
   <script src="housie.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="canvas2image.js"></script>
+  <script type="text/javascript" src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <!-- <script type="text/javascript" src="https://jquery.plugin.html2canvas.js"></script> -->
 </head>
 
 <body>
 
-  <div id="name"></div>
-  <div id="ticket"></div>
+  <div id="name-form">
+    Please Enter your Name
+    <input name="name" type="text" maxlength="512" id="nameForm"/>
+    
+  <input type="button" id="nameSave" value="Make My Ticket" />
+  </div>
+  
+  <span id="widget" class="widget">
+    <div id="name">NAME GOES HERE</div>
+    <div id="ticket">
+    </div>
+  </span>
+
+  <input type="button" id="btnSave" value="Save PNG" />
+<div id="img-out">
+  <div id="message">Here's your Ticket Image. Right click/Long Press and Save it</div>
+</div>
+
 
 </body>
 

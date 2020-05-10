@@ -20,18 +20,11 @@ row {
   width: 100%;
 }
 
+#message {
+  display: none;
+}
 
-/* table {
-  width: 100%;
-  display: table;
-  table-layout: fixed;
-  border-collapse: collapse;
-} */
+#widget {
+  display: none;
+}
 
-/* td {
-  display: table-cell;
-  text-align: center;
-  border: 1px solid hotpink;
-  vertical-align: middle;
-  word-wrap: break-word;
-} */
