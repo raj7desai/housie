@@ -290,3 +290,6 @@ window.onload = function () {
   // $("#name").toggle()
   addName()
 }
+
+
+// Adding thtis so it can be uplaoded to heorku
