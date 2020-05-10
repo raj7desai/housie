@@ -276,6 +276,8 @@ let addName = () => {
     console.log(ticketName)
     $("#name").text(ticketName)
     $("#widget").toggle()
+    $("#btnSave").toggle()
+    $("#name-form").toggle()
   })
 
 }

@@ -28,3 +28,10 @@ row {
   display: none;
 }
 
+#btnSave {
+  display: none;
+}
+
+#makeAnother {
+  display: none;
+}
