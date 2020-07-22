@@ -1,0 +1,41 @@
+body{
+  font-family: Helvetica, sans-serif;
+}
+
+table {
+   width: 1000px !important;
+   display: table;
+   table-layout: fixed;
+   border-collapse: collapse;
+}
+
+td {
+  width: 10%;
+  display: table-cell;
+  text-align: left;
+  border: 1px solid black;
+}
+
+row { 
+  width: 100%;
+}
+
+#message {
+  display: none;
+}
+
+#widget {
+  display: none;
+}
+
+#btnSave {
+  display: none;
+}
+
+#makeAnother {
+  display: none;
+}
+
+h5 {
+  font-size: .75em;
+}
