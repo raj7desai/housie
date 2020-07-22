@@ -6,9 +6,9 @@ let celebs = Array.apply(null, {
 celebs.shift()
 
 let ticket = [
-  [0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [null, null, null, null, null, null, null, null, null],
+  [null, null, null, null, null, null, null, null, null],
+  [null, null, null, null, null, null, null, null, null]
 ]
 
 let random = (min, max) => { // min and max included 
@@ -21,7 +21,7 @@ let addToRow3 = () => {
 
   let count = 0;
   for (let i = 0; i < ticket[2].length; ++i) {
-    if (ticket[2][i] == 0)
+    if (ticket[2][i] == null)
       count++;
   }
   console.log("on line 133 " + count)
@@ -35,7 +35,7 @@ let addToRow3 = () => {
     console.log(celebs[celebNumber])
 
 
-    if (ticket[2][n] == 0) {
+    if (ticket[2][n] == null) {
       if (celebs[celebNumber] == ticket[1][n] || celebs[celebNumber] == ticket[0][n]) {
         console.log("Same celeb")
       } else {
@@ -53,7 +53,7 @@ let addToRow2 = () => {
 
   let count = 0;
   for (let i = 0; i < ticket[2].length; ++i) {
-    if (ticket[2][i] == 0)
+    if (ticket[2][i] == null)
       count++;
   }
   console.log("on line 133 " + count)
@@ -67,7 +67,7 @@ let addToRow2 = () => {
     console.log(celebs[celebNumber])
 
 
-    if (ticket[1][n] == 0) {
+    if (ticket[1][n] == null) {
       if (celebs[celebNumber] == ticket[2][n] || celebs[celebNumber] == ticket[0][n]) {
         console.log("Same celeb")
       } else {
@@ -85,7 +85,7 @@ let addToRow1 = () => {
 
   let count = 0;
   for (let i = 0; i < ticket[2].length; ++i) {
-    if (ticket[2][i] == 0)
+    if (ticket[2][i] == null)
       count++;
   }
   console.log("on line 133 " + count)
@@ -99,7 +99,7 @@ let addToRow1 = () => {
     console.log(celebs[celebNumber - 1])
 
 
-    if (ticket[0][n] == 0) {
+    if (ticket[0][n] == null) {
       ticket[0][n] = celebs[celebNumber]
       count = count - 1
     } else {
