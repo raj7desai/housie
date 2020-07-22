@@ -14,10 +14,12 @@ td {
   display: table-cell;
   text-align: left;
   border: 1px solid black;
+  padding: 10px;
 }
 
 row { 
   width: 100%;
+  display: block;
 }
 
 #message {

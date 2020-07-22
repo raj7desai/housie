@@ -131,6 +131,7 @@ let createTicket = (array) => {
   let row1 = document.createElement('row');
   let row2 = document.createElement('row');
   let row3 = document.createElement('row');
+  // let breaker = document.createElement('br');
 
 
 
@@ -139,9 +140,12 @@ let createTicket = (array) => {
     let td = document.createElement('td');
     td.innerHTML = array[0][x];
     row1.appendChild(td);
+
   }
 
+ 
   table.appendChild(row1);
+  
 
   for (let x = 0; x < array[1].length; x++) {
 
@@ -150,7 +154,12 @@ let createTicket = (array) => {
     row2.appendChild(td);
   }
 
+  
+  // table.appendChild(breaker);
   table.appendChild(row2);
+  // table.appendChild(breaker);
+  
+
 
   for (let x = 0; x < array[2].length; x++) {
 
