@@ -251,6 +251,22 @@ let darkMode = () => {
         $(this).css('color', 'white');
       }
     });
+    $("#darkMode").toggle()
+    $("#whiteMode").toggle()
+
+  })
+}
+
+let whiteMode = () => {
+  $("#whiteMode").click(function () {
+    $('td').each(function () {
+      if ($(this).text() != '') {
+        $(this).css('backgroundColor', 'white');
+        $(this).css('color', 'black');
+      }
+    });
+    $("#darkMode").toggle()
+    $("#whiteMode").toggle()
   })
 }
 
@@ -266,6 +282,7 @@ window.onload = function () {
   saveTicket()
   // $("#name").toggle()
   darkMode()
+  whiteMode()
   addName()
 }
 

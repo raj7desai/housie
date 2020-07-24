@@ -11,7 +11,7 @@ table {
 }
 
 td {
-  width: 10%;
+  width: 11.11%;
   display: table-cell;
   text-align: left;
   /* border: 1px solid black; */
@@ -19,8 +19,8 @@ td {
 }
 
 row { 
-  width: 100%;
-  display: block;
+  width: 50%;
+  display: flex;
 }
 
 #message {
@@ -38,6 +38,11 @@ row {
 #darkMode {
   display: none;
 }
+
+#whiteMode {
+  display: none;
+}
+
 #makeAnother {
   display: none;
 }
