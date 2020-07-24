@@ -108,6 +108,30 @@ let addToRow1 = () => {
   }
 }
 
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+
+// function setRandomColor() {
+//   $("#colorpad").css("background-color", getRandomColor());
+// }
+
+// let addColours = () => {
+//   for (let i = 0; i < ticket.length; i++) {
+//    for (let j = 0; j < array.length; j++) {
+//       ticket[i][j] == null ? 
+     
+//    }
+    
+//   }
+// }
 
 let makeTicket = () => {
 
@@ -169,7 +193,10 @@ let createTicket = (array) => {
   }
 
   table.appendChild(row3);
+  console.log("@@@@@@@@@@@@@@@@@@" + table)
   return table;
+
+
 
 }
 
@@ -219,6 +246,11 @@ window.onload = function () {
   makeTicket()
   let table = createTicket(ticket)
   document.getElementById('ticket').appendChild(table);
+  $('td').each(function () {
+    if ($(this).text() == '') {
+      $(this).css('backgroundColor', getRandomColor());
+    }
+  });
   saveTicket()
   // $("#name").toggle()
   addName()
