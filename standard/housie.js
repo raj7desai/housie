@@ -211,6 +211,9 @@ let saveTicket = () => {
       $("#img-out").append(canvas);
       $("#widget").toggle()
       $("#message").toggle()
+      $("#darkMode").hide()
+      $("#whiteMode").hide()
+
       // Clean up 
       //document.body.removeChild(canvas);
 
