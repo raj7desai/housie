@@ -1,5 +1,5 @@
 body{
-  font-family: Helvetica, sans-serif;
+  font-family: 'Allerta Stencil';
 }
 
 table {
@@ -7,13 +7,14 @@ table {
    display: table;
    table-layout: fixed;
    border-collapse: collapse;
+   font-size: 25px;
 }
 
 td {
   width: 10%;
   display: table-cell;
   text-align: left;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px;
 }
 
