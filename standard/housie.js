@@ -127,9 +127,9 @@ function getRandomColor() {
 //   for (let i = 0; i < ticket.length; i++) {
 //    for (let j = 0; j < array.length; j++) {
 //       ticket[i][j] == null ? 
-     
+
 //    }
-    
+
 //   }
 // }
 
@@ -167,9 +167,9 @@ let createTicket = (array) => {
 
   }
 
- 
+
   table.appendChild(row1);
-  
+
 
   for (let x = 0; x < array[1].length; x++) {
 
@@ -178,11 +178,11 @@ let createTicket = (array) => {
     row2.appendChild(td);
   }
 
-  
+
   // table.appendChild(breaker);
   table.appendChild(row2);
   // table.appendChild(breaker);
-  
+
 
 
   for (let x = 0; x < array[2].length; x++) {
@@ -237,9 +237,21 @@ let addName = () => {
     $("#name").text(ticketName)
     $("#widget").toggle()
     $("#btnSave").toggle()
+    $("#darkMode").toggle()
     $("#name-form").toggle()
   })
 
+}
+
+let darkMode = () => {
+  $("#darkMode").click(function () {
+    $('td').each(function () {
+      if ($(this).text() != '') {
+        $(this).css('backgroundColor', 'black');
+        $(this).css('color', 'white');
+      }
+    });
+  })
 }
 
 window.onload = function () {
@@ -253,6 +265,7 @@ window.onload = function () {
   });
   saveTicket()
   // $("#name").toggle()
+  darkMode()
   addName()
 }
 
